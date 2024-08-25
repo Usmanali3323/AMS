@@ -1,0 +1,154 @@
+/* src/style/admin.css */
+.admin-panel {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px); /* Adjust based on header/footer height */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+}
+
+.btn-view {
+    background-color: #17a2b8;
+}
+
+.btn-view:hover {
+    background-color: #117a8b;
+}
+
+.btn-update {
+    background-color: #ffc107;
+}
+
+.btn-update:hover {
+    background-color: #e0a800;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+.loading, .error {
+    color: #dc3545;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.user-table {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-table h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #f8f9fa;
+}
+
+.user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.leave-requests, .user-count {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.leave-requests h2, .user-count h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.leave-requests ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leave-requests li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.request-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.request-date {
+    color: #666;
+}
